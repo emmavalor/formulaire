@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="fr">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="style.css" />
+			<title>Formulaire</title>
+		</head>
+
+
+		<body>
+			<header>
+				<h1>Mon formulaire</h1>
+			</header>
+
+			<div id="container">
+
+				<img src="image/sendmail.svg" alt="Photo Mail">
+
+				<form method="post" onsubmit="compare(event)">
+					<div id="formulaire">
+						<div class="form">
+							<input type="text" name="nom" id="nom" placeholder="&#129485;Nom" maxlength="20" />
+
+							<input type="text" name="prenom" id="prenom" placeholder="&#129485;Prénom" maxlength="20"/>
+						</div>
+
+						<div class="form">
+								<input type="email" required name="email" id="email" placeholder="&#128231;Email"/>
+									
+								<input type="email" required name="confirmation" id="confirmation" placeholder="&#9989;Confirmation"/>
+						</div>
+							<p id="errormail"></p>
+					</div>
+
+					<input type="text" name="sujet" id="sujet" placeholder="Sujet"/>
+
+					<textarea required name="message" id="message" placeholder="Ecrivez votre message" maxlength="500"></textarea>
+
+					<button type="submit" value="Envoyer">ENVOYER</button>
+					<span></span>
+				</form>
+				
+			</div>
+
+			
+
+			<script src="script.js"></script>
+		</body>
+	</html>
